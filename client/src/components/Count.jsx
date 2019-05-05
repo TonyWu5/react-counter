@@ -3,7 +3,7 @@ import React from 'react';
 class Count extends React.Component {
   render() {
     return (
-      <div>
+      <div id="count">
         {this.props.count}
       </div>
     )

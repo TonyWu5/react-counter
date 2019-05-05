@@ -3,11 +3,14 @@ const { Component } = React;
 class Buttons extends Component {
   render() {
     return (
-      <div>
+      <div id='buttons'>
         <button
+        id='incrementButton'
         type="button"
         onClick={() => this.props.incrementCount()}> Increment Count </button>
-        <button type="button"
+        <button
+        id='decrementButton'
+        type="button"
         onClick={() => this.props.decrementCount()}> Decrement Count </button>
       </div>
     )

@@ -1,0 +1,21 @@
+#count {
+  font-size: 200px;
+  /* color: blue; */
+  text-align: center
+}
+
+#incrementButton {
+  background-color: green;
+  border-radius: 6px;
+  width: auto;
+}
+
+#decrementButton {
+  background-color: red;
+  border-radius: 6px;
+  width: auto;
+}
+
+#buttons {
+  text-align: center;
+}
