@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Count extends React.Component {
-  render() {
-    return (
-      <div id="count">
-        {this.props.count}
-      </div>
-    )
-  }
-}
+const Count = (props) => {
+  return (
+    <div id="count">
+      {props.count}
+    </div>
+  );
+};
 
 export default Count;

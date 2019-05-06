@@ -5,15 +5,15 @@ class Buttons extends Component {
     return (
       <div id='buttons'>
         <button
-        id='incrementButton'
-        type="button"
-        onClick={() => this.props.incrementCount()}> Increment Count </button>
+          id='incrementButton'
+          type="button"
+          onClick={() => this.props.incrementCount()}> Increment Count </button>
         <button
-        id='decrementButton'
-        type="button"
-        onClick={() => this.props.decrementCount()}> Decrement Count </button>
+          id='decrementButton'
+          type="button"
+          onClick={() => this.props.decrementCount()}> Decrement Count </button>
       </div>
-    )
+    );
   }
 }
 
