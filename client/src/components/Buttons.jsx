@@ -1,8 +1,8 @@
 import React from 'react';
-const { Component } = React;
+
 const Buttons = (props) => {
   const decrementButtonText = props.currentCount > 0 ? 'Decrement Count' : 'No Decrement Below 0';
-  const decrementButtonID = props.currentCount > 0 ? 'decrementButton' : 'below-zero';
+  const decrementButtonID = props.currentCount > 0 ? 'decrementButton' : 'below-zero-decrement';
   return (
     <div id='counter-buttons'>
       <button

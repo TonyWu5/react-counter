@@ -11,13 +11,13 @@
 }
 
 #decrementButton {
-  background-color: rgb(243, 130, 24);
+  background-color: rgb(24, 101, 243);
   border-radius: 6px;
   width: 100px;
 }
 
 #resetButton {
-  background-color: rgb(36, 117, 240);
+  background-color: rgb(240, 36, 36);
   color: white;
   border-radius: 6px;
   width: 50px;
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-#below-zero {
+#below-zero-decrement {
   background-color: white;
   border-radius: 6px;
   width: 100px;

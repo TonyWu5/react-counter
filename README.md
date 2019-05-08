@@ -1,1 +1,1 @@
-This is a simple Counter App built using reactjs.
+This is a simple Click-Counter App built using React.
