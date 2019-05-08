@@ -1,20 +1,27 @@
 import React from 'react';
 const { Component } = React;
-class Buttons extends Component {
-  render() {
-    return (
-      <div id='buttons'>
-        <button
-          id='incrementButton'
-          type="button"
-          onClick={() => this.props.incrementCount()}> Increment Count </button>
-        <button
-          id='decrementButton'
-          type="button"
-          onClick={() => this.props.decrementCount()}> Decrement Count </button>
-      </div>
-    );
-  }
-}
+const Buttons = (props) => {
+  const decrementButtonText = props.currentCount > 0 ? 'Decrement Count' : 'No Decrement Below 0';
+  const decrementButtonID = props.currentCount > 0 ? 'decrementButton' : 'below-zero';
+  return (
+    <div id='counter-buttons'>
+      <button
+        id={decrementButtonID}
+        className='buttons'
+        type="button"
+        onClick={() => props.decrementCount()}> {decrementButtonText} </button>
+      <button
+        id='resetButton'
+        className='buttons'
+        type="button"
+        onClick={() => props.resetCount()}> RESET (zero) </button>
+      <button
+        id='incrementButton'
+        className='buttons'
+        type="button"
+        onClick={() => props.incrementCount()}> Increment Count </button>
+    </div>
+  );
+};
 
 export default Buttons;

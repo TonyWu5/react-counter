@@ -6,24 +6,31 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
-    }
+      count: 0,
+    };
     this.incrementCount = this.incrementCount.bind(this);
     this.decrementCount = this.decrementCount.bind(this);
+    this.resetCount = this.resetCount.bind(this);
   }
 
   incrementCount() {
     let {count} = this.state;
     count += 1;
-    this.setState({
-      count: count
-    })
+    this.setState({count});
   }
 
   decrementCount() {
+    if (this.state.count > 0) {
+      this.setState({
+        count: this.state.count - 1
+      });
+    }
+  }
+
+  resetCount() {
     this.setState({
-      count: this.state.count-1
-    })
+      count: 0
+    });
   }
 
   render() {
@@ -31,11 +38,13 @@ class App extends React.Component {
       <div>
         <Count count={this.state.count} />
         <Buttons
-        incrementCount={this.incrementCount}
-        decrementCount={this.decrementCount}
+          incrementCount={this.incrementCount}
+          decrementCount={this.decrementCount}
+          resetCount={this.resetCount}
+          currentCount={this.state.count}
         />
       </div>
-    )
+    );
   }
 }
 
